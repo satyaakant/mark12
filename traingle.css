@@ -43,6 +43,7 @@ button{
 input{
     padding: 10px;
     border-radius: 10px;
+    color: black;
 }
 .footer{
     background-color:#0ed4e7;
