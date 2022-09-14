@@ -15,7 +15,12 @@ function calculateScore(){
        }
        index++ ;
     }
+    if(index==0){
+        outputle.innerText="Enter answers my friend "
+    }
+    else{
     outputle.innerText="Your score is " + score;
+    }
 }
 
 submitAnswer.addEventListener('click',calculateScore);
