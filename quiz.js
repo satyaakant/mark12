@@ -2,7 +2,7 @@ const quizForm = document.querySelector(".Quiz-form");
 const submitAnswer = document.querySelector("#btn-submit");
 const outputle = document.querySelector("#output");
 
-const correctAnswer = ["75°","Right Angled","Equilateral Triangle","180"];
+const correctAnswer = ["75°","Right Angled","Equilateral Triangle","180°"];
 
 function calculateScore(){
     let score =0;
@@ -11,15 +11,14 @@ function calculateScore(){
     
     for(let value of formResults.values()){
        if(value === correctAnswer[index]){
-        score++ ;
+        score=score+1 ;
        }
-       index++ ;
+       index=index+1 ;
     }
-    if(index==0){
-        outputle.innerText="Enter answers my friend "
-    }
-    else{
-    outputle.innerText="Your score is " + score;
+    if (index === 4){
+        outputle.innerText = "Your Score is : " + score;
+    }else{
+        outputle.innerText = "Please answer all the questions"
     }
 }
 
